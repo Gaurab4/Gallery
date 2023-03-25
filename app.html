@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery </title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Junge&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- title of the page using h1 and css -->
+    <h1 id="title">Photo Gallery</h1>
+    <!-- this is the hero section   -->
+    <div class="row">
+        <!-- hero text -->
+        <div class="column">
+            <p id="hero-text">Asynchronously obtaining photos from the Unsplash API, more than 100+ photographs have been merged. You may discover numerous images and the works of many different photographers.</p>
+        </div>
+        <!-- hero image -->
+        <div class="column">      
+                 <img src="https://source.unsplash.com/random" style="width: 400px;height: 400px;padding: 10%;">
+        </div>
+    </div>
+<!-- horiontal line  -->
+    <hr>
+    <!-- images  -->
+    <!-- <div class="full-img">
+      <img id="image0">
+    </div> -->
+    <div class = "grid">
+      <div class="div-image">
+          <img id="image0" class="myImg" onclick="zoomImage(this.id);">
+      </div>
+      <div class="div-image ">
+        <img id="image1" onclick="zoomImage(this.id);" >
+      </div>
+      <div class="div-image">
+        <img id="image2" onclick="zoomImage(this.id);">
+      </div>
+      <div class="div-image">
+        <img id="image3" onclick="zoomImage(this.id); " >
+        
+      </div>
+      <div class="div-image">
+        <img id="image4" onclick="zoomImage(this.id);" >
+        </div>
+      <div class="div-image">
+        <img id="image5" onclick="zoomImage(this.id);" >
+      </div>
+      <div class="div-image">
+        <img id="image6" onclick="zoomImage(this.id);" >
+      </div>
+      <div class="div-image">
+        <img id="image7" onclick="zoomImage(this.id);" >
+      </div>
+      <div class="div-image">
+        <img id="image8" onclick="zoomImage(this.id);">
+      </div>
+  
+  </div>
+
+  <div class="controls">
+    <button class="prev-btn" onclick="prevImage()">Prev</button>
+    <button class="next-btn" onclick="nextImage()">Next</button>
+  </div>
+
+
+  </body>
+</html>
